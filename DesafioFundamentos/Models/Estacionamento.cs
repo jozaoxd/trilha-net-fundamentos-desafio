@@ -17,7 +17,7 @@ namespace DesafioFundamentos.Models
         public void AdicionarVeiculo()
         {
             // TODO: Pedir para o usuário digitar uma placa (ReadLine) e adicionar na lista "veiculos"
-            // *IMPLEMENTE AQUI*
+            // IMPLEMENTADO!!!
             Console.WriteLine("Digite a placa do veículo para estacionar: ");
             string placa = Console.ReadLine();
             veiculos.Add(placa);
@@ -29,7 +29,7 @@ namespace DesafioFundamentos.Models
             string x = Console.ReadLine();
 
             // Pedir para o usuário digitar a placa e armazenar na variável placa
-            // *IMPLEMENTE AQUI*
+            // IMPLEMENTADO!!!
             string placa = x;
 
             // Verifica se o veículo existe
@@ -38,13 +38,13 @@ namespace DesafioFundamentos.Models
                 Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado:");
                 // TODO: Pedir para o usuário digitar a quantidade de horas que o veículo permaneceu estacionado,
                 // TODO: Realizar o seguinte cálculo: "precoInicial + precoPorHora * horas" para a variável valorTotal                
-                // *IMPLEMENTE AQUI*
+                // IMPLEMENTADO!!!
                 string inputhoras = Console.ReadLine();
                 int horas = Convert.ToInt32(inputhoras);
                 decimal valorTotal = precoInicial+(precoPorHora*horas);
 
                 // TODO: Remover a placa digitada da lista de veículos
-                // *IMPLEMENTE AQUI*
+                // IMPLEMENTADO!!!
                 veiculos.Remove(x);
 
                 Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
@@ -62,7 +62,7 @@ namespace DesafioFundamentos.Models
             {
                 Console.WriteLine("Os veículos estacionados são:");
                 // TODO: Realizar um laço de repetição, exibindo os veículos estacionados
-                // *IMPLEMENTE AQUI*
+                // IMPLEMENTADO!!!
                 foreach (string item in veiculos)
                 {
                     Console.WriteLine(item);
